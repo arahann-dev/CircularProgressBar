@@ -1,0 +1,16 @@
+PODS:
+  - CircularProgressBar (0.1.0)
+
+DEPENDENCIES:
+  - CircularProgressBar (from `../`)
+
+EXTERNAL SOURCES:
+  CircularProgressBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CircularProgressBar: d4e878c9eb138180aa38847fbac748babc30d1d7
+
+PODFILE CHECKSUM: eee72d52de71ac3ad0df421b474b68302b1b7d08
+
+COCOAPODS: 1.5.3
