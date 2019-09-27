@@ -9,14 +9,23 @@
 var progress : Float = 0
 
 SwiftProgressBar.addCircularProgressBar(view: self.view, type: 1)
+
 SwiftProgressBar.setProgressColor(color: UIColor.red)
+
 Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+
     if progress <= 100{
+    
         progress = progress + 10
+        
         SwiftProgressBar.setProgress(progress: progress)
+        
     }else{
+    
         SwiftProgressBar.hideProgressBar()
+        
     }
+    
 }
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
