@@ -7,6 +7,7 @@
  
 ## Example
 var progress : Float = 0
+
 SwiftProgressBar.addCircularProgressBar(view: self.view, type: 1)
 SwiftProgressBar.setProgressColor(color: UIColor.red)
 Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
