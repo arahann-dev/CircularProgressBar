@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/CircularProgressBar.svg?style=flat)](https://cocoapods.org/pods/CircularProgressBar)
  
 ## Example
+...
 var progress : Float = 0
 
 SwiftProgressBar.addCircularProgressBar(view: self.view, type: 1)
@@ -27,7 +28,7 @@ Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
     }
     
 }
-
+...
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
