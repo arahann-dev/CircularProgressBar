@@ -16,17 +16,17 @@ SwiftProgressBar.setProgressColor(color: UIColor.red)
 
 Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
 
-if progress <= 100{
+    if progress <= 100{
 
-progress = progress + 10
+        progress = progress + 10
 
-SwiftProgressBar.setProgress(progress: progress)
+        SwiftProgressBar.setProgress(progress: progress)
 
-}else{
+    }else{
 
-SwiftProgressBar.hideProgressBar()
-
-}
+        SwiftProgressBar.hideProgressBar()
+        
+    }
 
 }
 ```
