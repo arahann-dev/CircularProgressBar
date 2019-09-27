@@ -41,12 +41,12 @@ public class SwiftProgressBar{
         self.trackLayer.fillColor = UIColor.clear.cgColor
         self.trackLayer.strokeEnd = 1
         self.setTrackWidth(width: 4)
-        self.setTrackColor(color: UIColor.black)
+        self.setTrackColor(color: UIColor.lightGray)
         //setting up progress bar attributes
         self.coveringLayer.path = path.cgPath
         self.coveringLayer.fillColor = UIColor.clear.cgColor
         self.setProgressWidth(width: 4)
-        self.setProgressColor(color: UIColor.lightGray)
+        self.setProgressColor(color: UIColor.black)
         self.setProgress(progress: 0)
         //adding both layers to container view
         progressView.layer.addSublayer(self.trackLayer)
@@ -76,12 +76,12 @@ public class SwiftProgressBar{
         self.trackLayer.fillColor = UIColor.clear.cgColor
         self.trackLayer.strokeEnd = 1
         self.setTrackWidth(width: 1)
-        self.setTrackColor(color: UIColor.black)
+        self.setTrackColor(color: UIColor.lightGray)
         //setting up progress bar attributes
         self.coveringLayer.path = tPath.cgPath
         self.coveringLayer.fillColor = UIColor.clear.cgColor
         self.setProgressWidth(width: 40)
-        self.setProgressColor(color: UIColor.lightGray)
+        self.setProgressColor(color: UIColor.black)
         self.coveringLayer.strokeEnd = 0
         //adding both layers to container view
         progressView.layer.addSublayer(self.trackLayer)
@@ -108,9 +108,9 @@ public class SwiftProgressBar{
     ///This method is used to update the progress of circular progress bar.
     ///
     /// - Parameters:
-    ///- progress: Float - that indicates progress of circular progress bar. Its value ranges from 0.0 to 1.0
+    ///- progress: Float - that indicates progress of circular progress bar. Its value ranges from 0 to 100
     public static func setProgress(progress: Float){
-        self.coveringLayer.strokeEnd = CGFloat(progress)
+        self.coveringLayer.strokeEnd = CGFloat(progress / 100)
     }
     
     //MARK:- hide progress bar
